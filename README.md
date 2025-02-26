@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > **Proof of Concept: Alternative Alpine.js Usage**  
 > 
-> This project demonstrates an **experimental approach** to Alpine.js usage. While Alpine.js was designed primarily for enhancing server-rendered HTML (as used with Laravel Livewire or go templ), JAlpine repurposes it as a full SPA framework with JSON API communication.
+> This project demonstrates an **experimental approach** to Alpine.js usage. While Alpine.js was designed primarily for enhancing server-rendered HTML (as used with Laravel Livewire or go templ), JAlpine repurposes it as a SPA framework with JSON API communication.
 >
 > This architectural pattern diverges from Alpine's intended use case but explores its potential for lightweight Go-backed SPAs without complex frontend tooling. Consider it an interesting experiment rather than a production-ready solution.
 >
