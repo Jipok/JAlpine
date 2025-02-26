@@ -1,18 +1,3 @@
-// When using Alpine's `$persist` or `$sync` with `x-model` binding, there's an issue with browser
-// tab restoration (when using tab suspending/discarding features like in Sidebery). The browser 
-// restores the input's value from its saved snapshot, and this restored DOM value overwrites 
-// the actual state that should be taken from localStorage or other storage.
-// https://github.com/alpinejs/alpine/discussions/4552
-//
-// This will detect restored tab and forces reload with blocking send any $sync update to server
-window.addEventListener('pageshow', function (event) {
-    if (event.persisted || performance.getEntriesByType("navigation")[0].type === 'back_forward') {
-        document.documentElement.innerHTML = '';
-        location.reload();
-    }
-}, false);
-
-
 // When Alpine components have been initialized, merge our data
 document.addEventListener('alpine:initialized', () => {
     document.querySelectorAll('[x-data]').forEach(el => {
