@@ -49,7 +49,7 @@ func main() {
 	}
 
 	// Initialize and download required libraries
-	libsMap, err := EnsureStaticLibs("./static", AlpineJS, TailwindCSS, AlpineAutoAnimate)
+	libsMap, err := EnsureStaticLibs("./static", AlpineJS, TailwindCSS, AlpineAutoAnimate, AlpinePersist)
 	if err != nil {
 		log.Fatalf("Failed to ensure static libraries: %v", err)
 	}
@@ -92,7 +92,6 @@ func handleIndex(w http.ResponseWriter, r *http.Request) {
 	data := map[string]interface{}{
 		"todoApp::todos":   todos,
 		"todoApp::newTodo": "",
-		"todoApp::filter":  "all",
 	}
 
 	if err := template.Execute(w, data); err != nil {

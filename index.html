@@ -127,7 +127,7 @@
     <script x-data="todoApp"> ({
         todos: [],
         newTodo: '',
-        filter: 'all',
+        filter: Alpine.$persist('all'),
         error: '', 
         
         deleteTodo(id) {
