@@ -8,7 +8,6 @@ import (
 	"os"
 	"time"
 
-	"github.com/google/uuid"
 	"github.com/gorilla/mux"
 	"github.com/tidwall/buntdb"
 )
@@ -138,7 +137,7 @@ func handleCreateTodo(w http.ResponseWriter, r *http.Request) {
 
 	// Create and save new todo
 	todo := Todo{
-		ID:        uuid.New().String(),
+		ID:        time.Now().String(),
 		Text:      req.Text,
 		Completed: false,
 		CreatedAt: time.Now(),
