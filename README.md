@@ -107,7 +107,7 @@ Provides seamless API communication through Alpine.js magic methods:
 ├── main.go              # Application entrypoint and routes
 ├── template.go          # Template engine implementation
 ├── helpers.js           # Client-side helpers
-└── todos.db             # BuntDB database file (auto-created)
+└── data.db              # BuntDB database file (auto-created)
 ```
 
 ## Why Use JAlpine?
