@@ -45,16 +45,9 @@ The included Todo app demonstrates JAlpine's capabilities:
 - Create, toggle, and delete todos
 - Filter todos by status (all, active, completed)
 - Clear completed todos
-- Client-side validation
+- Server-side validation
 - Real-time UI updates without page reloads
 - Automatic version checking for hot reloads
-
-## Getting Started
-
-### Prerequisites
-
-- Go 1.18 or higher
-- Internet connection (for initial dependency download)
 
 ### Installation
 
@@ -99,6 +92,8 @@ Provides seamless API communication through Alpine.js magic methods:
 - `$patch(url, data)`
 - `$delete(url, data)`
 
+`data` is optional
+
 ### Directory Structure
 
 ```
@@ -118,11 +113,3 @@ JAlpine is perfect for:
 - Projects that need rapid development
 - Teams that prefer Go on the backend
 - Developers who want Alpine.js simplicity without complex frontend tooling
-
-## License
-
-MIT
-
-## Contributing
-
-Contributions welcome! Please feel free to submit a Pull Request.
